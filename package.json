@@ -1,0 +1,20 @@
+{
+	"name": "weather-app",
+	"version": "1.0.0",
+	"description": "Minimalistic weather app",
+	"main": "src/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "webpack --progress --mode=production",
+		"watch": "webpack --progress --watch"
+	},
+	"author": "Tristan Deane tristandeane93@gmail.com",
+	"license": "ISC",
+	"devDependencies": {
+		"babel": "^6.23.0",
+		"file-loader": "^6.2.0",
+		"webpack": "^5.9.0",
+		"webpack-cli": "^4.2.0"
+	},
+	"dependencies": {}
+}

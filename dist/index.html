@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Weather App</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../src/style.css" />
+	</head>
+	<body>
+		<div id="main">
+			<!--Search bar and button-->
+			<div class="search-box">
+				<label for="search">
+					<span>Your city name:</span><br>
+					<input
+						type="search"
+						id="search"
+						name="search"
+						placeholder="Search city"
+					/>
+					<button class="search-btn">Search city</button>
+					<p>* Only canadian cities are supported for now.</p>
+				</label>
+				<!-- Units selection-->
+				<div class="units-box">
+					<label>Select units:</label>
+					<p><span id="metric" class="highlighted">℃</span> / 
+						<span id="imperial">℉</span></p>
+				</div>
+			</div>
+			<!--Weather widget-->
+			<div class="weather-data">
+				<!--Header of weather widget-->
+				<div class="header">
+					<div class="location-box">
+						<h1 class="location"></h1>
+						<p class="description"></p>
+					</div>
+					<div class="icon-box">
+					</div>
+				</div>
+				<!--Main content of weather widget-->
+				<div class="weather-content">
+					<div class="temp-box">
+						<p class="current-temp"></p>
+					</div>
+					<!--Extra details-->
+					<div class="details"></div>
+				</div>
+				<!--Footer of weather widget-->
+				<div class="footer">
+					<a href="#">Tristan Deane | GitHub</a>
+					<!--Current date and time-->
+					<div>
+						<span id="time"></span><span id="date"></span>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<script src="main.js" async defer></script>
+	</body>
+</html>

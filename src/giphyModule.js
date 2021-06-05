@@ -8,14 +8,11 @@ const cloudy = "TercUvhYRPkmkDUNZk";
 const snow = "KAdwIAgwyWl4R6DFtA";
 const misc = "3NeU6yW7Oo33nDUTlg";
 
-// API beta key
-const apiKey = "xj9qAvGJF696mdrfW5k9kCBr5SqT7kOj";
-
 // Accept an icon category, determine proper ID and then fetch giph
 export async function getIcon(category) {
 	try {
 		const id = validateIcon(category);
-		const requestURL = `https://api.giphy.com/v1/gifs/${id}?api_key=${apiKey}`;
+		const requestURL = `https://api.giphy.com/v1/gifs/${id}?api_key=${process.env.API_KEY}`;
 
 		const img = document.createElement("img");
 		// Pause until url is retrieved

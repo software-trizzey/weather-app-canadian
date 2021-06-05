@@ -1,5 +1,6 @@
+// Import CSS
+import "./style.css";
 // Handles code for weather app project
-
 import { getWeather, processData } from "./searchModule.js";
 import render from "./renderModule.js";
 
